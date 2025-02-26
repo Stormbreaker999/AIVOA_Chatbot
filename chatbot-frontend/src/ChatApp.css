@@ -1,0 +1,99 @@
+/* Chat container */
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Chat box */
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message container */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* User message */
+.user-message {
+    align-self: flex-end; /* Aligns to the right */
+    background-color: #0084ff; /* Blue for user */
+    color: white;
+    padding: 12px 18px;
+    max-width: 75%;
+    border-radius: 18px;
+    font-size: 16px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+/* Bot message */
+.bot-message {
+    align-self: flex-start; /* Aligns to the left */
+    background-color: #e0e0e0; /* Light gray for bot */
+    color: #333;
+    padding: 12px 18px;
+    max-width: 75%;
+    border-radius: 18px;
+    font-size: 16px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Input box */
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+/* Input field */
+.input-box input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Send button */
+.input-box button {
+    padding: 12px 20px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Hover effect */
+.input-box button:hover {
+    background-color: #0073e6;
+}
